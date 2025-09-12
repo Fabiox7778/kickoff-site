@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: auto 0;
+    background: black;
+}
