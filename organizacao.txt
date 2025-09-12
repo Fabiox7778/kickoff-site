@@ -12,3 +12,19 @@ Legenda dos nomes ->
 -> 01L = Lisboa
 -> 02l = Lisboa
 ------------------------------------------------------------------------------------
+
+Ideias de Páginas
+
+-> Hub
+-> Coleções (imgs)
+-> Sobre nós
+-> Contatos
+-> Ofertas
+-> Masculino 
+-> Feminino 
+-> Infantil
+-> Login
+-> Ajuda
+-> Acessórios
+-> Calçados
+-> Comprar Por Times
