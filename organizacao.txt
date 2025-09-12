@@ -12,3 +12,19 @@ Legenda dos nomes ->
 -> 01L = Lisboa
 -> 02l = Lisboa
 ------------------------------------------------------------------------------------
+
+Ideias de Páginas
+
+-> Hub - Rafinha
+-> Coleções (imgs) - Urbano
+-> Sobre nós - Lisboa
+-> Contatos - Lisboa
+-> Ofertas - Fabio
+-> Masculino - Fabio
+-> Feminino - Fabio
+-> Infantil - Rafinha
+-> Login - Lisboa
+-> Ajuda - Vitinho
+-> Acessórios - Vitinho
+-> Calçados - Vitinho
+-> Comprar Por Times - Urbano
