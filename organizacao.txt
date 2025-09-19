@@ -15,7 +15,7 @@ Legenda dos nomes ->
 
 Ideias de Páginas
 
-**Menu Principal**
+**Menu Principal** = index.html
 ├── Hub
 ├── News
 │   ├── Futebol
@@ -24,7 +24,7 @@ Ideias de Páginas
 ├── Sobre Nós
 ├── Contatos
 
-**Comunidade**
+**Comunidade** 
 ├── Fóruns
 ├── Eventos
 └── Blog

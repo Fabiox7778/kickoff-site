@@ -1,33 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
-    box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-* {
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-html,
-body {
-  margin: 0px;
-  height: 100%;
-}
-/* a blue color as a generic focus style */
-button:focus-visible {
-  outline: 2px solid #4a90e2 !important;
-  outline: -webkit-focus-ring-color auto 5px !important;
-}
-a {
-  text-decoration: none;
-}
-
-
-footer {
-    justify-content: center;
+header {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    flex-direction: row;
-    margin: auto 0;
-    background: black;
+    padding: 20px 100px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    color: #000000;
+    background-color: white;
+
+}
+.
+
+.sign-button, .incognito-button, .subscribe-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.logo {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 10px;
+}
+main {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
 }
