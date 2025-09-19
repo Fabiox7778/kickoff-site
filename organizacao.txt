@@ -15,16 +15,21 @@ Legenda dos nomes ->
 
 Ideias de Páginas
 
--> Hub - Rafinha
--> Coleções (imgs) - Urbano
--> Sobre nós - Lisboa
--> Contatos - Lisboa
--> Ofertas - Fabio
--> Masculino - Fabio
--> Feminino - Fabio
--> Infantil - Rafinha
--> Login - Lisboa
--> Ajuda - Vitinho
--> Acessórios - Vitinho
--> Calçados - Vitinho
--> Comprar Por Times - Urbano
+**Menu Principal** = index.html
+├── Hub
+├── News
+│   ├── Futebol
+│   ├── Basquete
+│   └── Futebol Americano
+├── Sobre Nós
+├── Contatos
+
+**Comunidade** 
+├── Fóruns
+├── Eventos
+└── Blog
+
+**Acesso**
+├── Login
+├── Cadastro
+└── Ajuda
