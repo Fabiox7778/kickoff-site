@@ -9,7 +9,7 @@ Este repositório contém o código-fonte do site, juntamente com os protótipos
 ### 🎨 Identidade Visual
 - **Logotipo**: <img src="/img/unnamed.png" alt="Static GitHub">
 - **Paleta de Cores**: Verde e preto principalmente
-- **Tipografia**: (https://fonts.google.com/specimen/Inter)
+- **Tipografia**: (https://fonts.google.com/specimen/Inter) 
 
 ### 💻 Tecnologias Utilizadas
 - **HTML** - Para a estruturação do conteúdo.
