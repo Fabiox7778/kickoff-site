@@ -15,16 +15,21 @@ Legenda dos nomes ->
 
 Ideias de Páginas
 
--> Hub - 
--> News - 
--> Sobre nós -
--> Contatos - 
--> Futebol - 
--> Basquete - 
--> Futebol Americano - 
-->  Mudar 
--> Login - 
--> Cadastro - 
--> Ajuda - 
-->  Mudar
-->  Mudar
+**Menu Principal**
+├── Hub
+├── News
+│   ├── Futebol
+│   ├── Basquete
+│   └── Futebol Americano
+├── Sobre Nós
+├── Contatos
+
+**Comunidade**
+├── Fóruns
+├── Eventos
+└── Blog
+
+**Acesso**
+├── Login
+├── Cadastro
+└── Ajuda
