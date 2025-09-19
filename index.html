@@ -8,20 +8,38 @@
     <link rel="manifest" href="./assets/img/site.webmanifest">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>KickOff</title>
-    <a href="/style/index.css"></a>
+    <link rel="stylesheet" href="assets/style/index.css">
 </head>
 
 <body>
-    <header><img src="./assets/img/favicon-32x32.png" alt="logo" class="logo">KickOff</header>
+    <header>
+        <img src="./assets/img/favicon-32x32.png" alt="logo" class="logo">
+        <div><h1 class="text-wrapper">Kick Off</h1></div>
+        <div class="button-container">
+            <button class="sign-in-button" type="button">
+                <span class="sign-spam">SIGN IN</span>
+            </button>
+            <button class="incognito-button" type="button">
+                <span class="incognito-span">INCOGNITO MODE</span>
+            </button>
+            <button class="subscribe-button" type="button">
+                <span class="subscribe-span">SUBSCRIBE</span>
+            </button>
+        </div>
+    </header>
     <main>
         <div class="layout-main">
+        <img class="rectangle-main" src="/assets/img/main-image.png" alt="Rectangle 2" />
+        <img class="logo2" src="/assets/img/android-chrome-512x512.png" alt="logo2" />
             <h1>Built Your Space.</h1>
             <p>Create your Sport Blog here!</p>
-            <p>Sign Up</p>
-            <p>Explore blogs!</p>
-            <p>Create your Own</p>
+            <button class="sing-up-button" type="button">
+            <span class="sign-up-spam">SIGN UP</span>
+            <button class="explore-button" type="button">
+            <span class="explore-span">EXPLORE</span>
+           <button class="create-own-button">
+            <span class="create-own-span">CREATE YOUR OWN</span>
         </div>
         <div>
 
@@ -29,7 +47,6 @@
         <div class="layout-news">News</div>
     </main>
     <footer class="layout-footer">
-        <div class="rectangle-8"></div>
         <div class="footer-content">
         <h3 class="text-wrapper-13">Kick Off</h3>
         <p class="make-your-own-blog">MAKE YOUR OWN BLOG</p>
@@ -38,11 +55,12 @@
         <div class="rectangle-footer">
             <label class="email-input">Email...</label>
             <input type="email" id="email-input" name="email" class="email-input" placeholder="Email..."/>
-         <button type="submit" class="rectangle-10" aria-label="Subscribe to newsletter">
-            <span class="text-wrapper-15">Subscribe</span>
+         <button type="submit" class="button-subscribe">
+            <span class="text-button-subscribe">Subscribe</span>
         </div>
         </div>
     </footer>
 </body>
 
 </html>
+

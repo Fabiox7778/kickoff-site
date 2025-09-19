@@ -1,33 +1,86 @@
+/* Alinhar botões à direita no header */
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
     margin: 0;
     padding: 0;
 }
 
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-* {
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-html,
-body {
-  margin: 0px;
-  height: 100%;
-}
-/* a blue color as a generic focus style */
-button:focus-visible {
-  outline: 2px solid #4a90e2 !important;
-  outline: -webkit-focus-ring-color auto 5px !important;
-}
-a {
-  text-decoration: none;
-}
-
-
-footer {
-    justify-content: center;
+header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: row;
-    margin: auto 0;
-    background: black;
+    padding: 10px 20px;
+    background-color: #ffffff;
+}
+
+header .text-wrapper{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: #000000;
+    font-size: 1.2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+
+header div {
+    display: flex;
+    align-items: left;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+.sign-in-button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+    background-color: #53AA51;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: none;
+     font-size: 0.9rem;
+    padding: 10px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.incognito-button, .subscribe-button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    background-color: transparent;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 0.9rem;
+    border-color: rgba(192, 192, 192, 0.616);
+    padding: 10px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    border-width: 1px;
+}
+
+.logo {
+    justify-content: left;
+    align-items: left;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 10px;
+}
+main {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
 }
