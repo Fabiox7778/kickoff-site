@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.retangulo {
+    width: 400px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 240px;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.logo img {
+    width: 4rem;
+}
+
+.menu {
+    display: flex;
+    gap: 26px;
+}
+
+.menu a {
+    color: #5DBD5A;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.4s;
+}
+
+.menu a:hover {
+    color: #0a9405;
+}
