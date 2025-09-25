@@ -702,3 +702,10 @@ main {
   font-size: 1rem;
   font-weight: 400;
 }
+
+.layout-green {
+  background-color: #53aa51;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
