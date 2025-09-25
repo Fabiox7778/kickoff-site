@@ -5,16 +5,18 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-32x32.png">
     <link rel="manifest" href="./assets/img/site.webmanifest">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KickOff</title>
     <link rel="stylesheet" href="assets/style/index.css">
 </head>
 <body>
-    </header>
-    <main>
-        <img src="./assets/img/favicon-32x32.png" alt="logo" class="logo">
-        <div><h1 class="text-wrapper">Kick Off</h1></div>
+    <header>
+        <div class="header-left">
+            <img src="./assets/img/LogoKickoff.png" alt="logo" class="logo">
+            <h1 class="text-wrapper">KickOff</h1>
+        </div>
         <div class="button-container">
             <button class="sign-in-button" type="button">
                 <span class="sign-spam">SIGN IN</span>
@@ -26,9 +28,23 @@
                 <span class="subscribe-span">SUBSCRIBE</span>
             </button>
         </div>
-        <div>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="banner-overlay"> <img src="./assets/img/LogoKickoff.png" alt="logo" class="logo-banner"></div>
+            <div class="banner-inner">
+                <div class="banner-content">
+                    <h1 class="banner-title">Built Your Space.</h1>
+                    <p class="banner-subtitle">Create your Sport Blog here!</p>
+                    <div class="banner-actions">
+                        <a href="#" class="btn btn-signup">Sign Up</a>
+                        <a href="#" class="btn btn-explore">Explore blogs!</a>
+                        <a href="#" class="btn btn-create">Create your own</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        </div>
         <div class="layout-news">News</div>
     </main>
     <footer class="layout-footer">
@@ -38,10 +54,20 @@
         <form class="newsletter-form">
         <p> </p>
         <div class="rectangle-footer">
-            <label class="email-input">Email...</label>
             <input type="email" id="email-input" name="email" class="email-input" placeholder="Email..."/>
          <button type="submit" class="button-subscribe">
             <span class="text-button-subscribe">Subscribe</span>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link">
+                    <img src="./assets/img/facebook.svg" alt="Facebook" />
+                </a>
+                <a href="https://x.com" target="_blank" rel="noopener" class="social-link">
+                    <img src="./assets/img/twitter-x.svg" alt="X" />
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link">
+                    <img src="./assets/img/instagram.svg" alt="Instagram" />
+                </a>
+            </div>
         </div>
         </div>
     </footer>
