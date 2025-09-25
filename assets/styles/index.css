@@ -71,7 +71,7 @@ header div {
   border-radius: 100px;
   cursor: pointer;
   line-height: 1;
-  text-decoration: none; /* se for <a>, remove sublinhado */
+  text-decoration: none; 
 }
 
 .incognito-button,
@@ -89,7 +89,7 @@ header div {
   border-radius: 100px;
   cursor: pointer;
   line-height: 1;
-  text-decoration: none; /* quando for <a> */
+  text-decoration: none;
 }
 
 .logo {
@@ -699,7 +699,7 @@ main {
 }
 .text-essential {
   font-family: "Lugrasimo", cursive;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
@@ -708,4 +708,41 @@ main {
   color: white;
   text-align: center;
   padding: 40px 20px;
+}
+
+.layout-main {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  padding: 24px 16px 48px;
+  min-height: 450px;
+}
+.layout-main button {
+  appearance: none;
+  background: #53aa51; 
+  color: #ffffff;
+  border: none;
+  border-radius: 10px; 
+  padding: 16px 36px;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.layout-main button:hover {
+  background: #469246;
+}
+.layout-main button:focus {
+  outline: 2px solid rgba(0, 0, 0, 0.35);
+  outline-offset: 2px;
+}
+.layout-main .to-news {
+  margin: 0; 
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem; 
+  line-height: 1;
+  color: inherit; 
+  text-decoration: none;
 }
