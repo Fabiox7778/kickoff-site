@@ -6,11 +6,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-32x32.png">
     <link rel="manifest" href="./assets/img/site.webmanifest">
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KickOff</title>
-    <link rel="stylesheet" href="assets/style/index.css">
+    <link rel="stylesheet" href="assets/styles/index.css">
 </head>
 
 <body>
@@ -20,15 +20,13 @@
             <h1 class="text-wrapper">KickOff</h1>
         </div>
         <div class="button-container">
-            <button class="sign-in-button" type="button">
-                <span class="sign-spam">SIGN IN</span>
-            </button>
+            <a href="#auth-modal" class="sign-in-button">SIGN IN</a>
             <button class="incognito-button" type="button">
                 <span class="incognito-span">INCOGNITO MODE</span>
             </button>
-            <button class="subscribe-button" type="button">
+            <a href="#pro-modal" class="subscribe-button" role="button">
                 <span class="subscribe-span">SUBSCRIBE</span>
-            </button>
+            </a>
         </div>
     </header>
     <main>
@@ -39,9 +37,9 @@
                     <h1 class="banner-title">Built Your Space.</h1>
                     <p class="banner-subtitle">Create your Sport Blog here!</p>
                     <div class="banner-actions">
-                        <a href="#" class="btn btn-signup">Sign Up</a>
+                        <a href="#auth-modal" class="btn btn-signup">Sign Up</a>
                         <a href="#" class="btn btn-explore">Explore blogs!</a>
-                        <a href="#" class="btn btn-create">Create your own</a>
+                        <a href="#pro-modal" class="btn btn-create">Create your own</a>
                     </div>
                 </div>
             </div>
@@ -51,29 +49,115 @@
     </main>
     <footer class="layout-footer">
         <div class="footer-content">
-        <h3 class="text-wrapper-13">Kick Off</h3>
-        <p class="make-your-own-blog">MAKE YOUR OWN BLOG</p>
-        <form class="newsletter-form">
-        <p> </p>
-        <div class="rectangle-footer">
-            <input type="email" id="email-input" name="email" class="email-input" placeholder="Email..."/>
-         <button type="submit" class="button-subscribe">
-            <span class="text-button-subscribe">Subscribe</span>
+            <h3 class="text-wrapper-13">Kick Off</h3>
+            <p class="make-your-own-blog">MAKE YOUR OWN BLOG</p>
+            <form class="newsletter-form">
+                <p> </p>
+                <div class="rectangle-footer">
+                    <input type="email" id="email-input" name="email" class="email-input" placeholder="Email..." />
+                    <button type="submit" class="button-subscribe">
+                        <span class="text-button-subscribe">Subscribe</span>
+                    </button>
+                </div>
+            </form>
             <div class="social-links">
-                <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link">
+                <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
                     <img src="./assets/img/facebook.svg" alt="Facebook" />
                 </a>
-                <a href="https://x.com" target="_blank" rel="noopener" class="social-link">
+                <a href="https://x.com" target="_blank" rel="noopener" class="social-link" aria-label="X">
                     <img src="./assets/img/twitter-x.svg" alt="X" />
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link">
+                <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link"
+                    aria-label="Instagram">
                     <img src="./assets/img/instagram.svg" alt="Instagram" />
                 </a>
             </div>
         </div>
-        </div>
     </footer>
+
+    <div id="auth-modal" class="auth" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+        <div class="auth-modal" role="document">
+            <div class="modal-content">
+                <a href="#" class="modal-close" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </a>
+                <div class="logo-lockup">
+                    <img src="./assets/img/LogoKickoff.png" alt="Logo Kickoff" class="logo-modal">
+                    <span class="logo-divider" aria-hidden="true"></span>
+                    <div class="wordmark" aria-label="Kick Club">
+                        <span class="text-kick">KICK</span>
+                        <span class="text-club">Club</span>
+                    </div>
+                </div>
+                <h2 class="auth-title">LOG IN OR SIGN UP</h2>
+                <p class="text-auth">Enjoy members-only access to exclusive products, experiences, offers and more.</p>
+                <ul class="social-auth">
+                    <li> <a href="https://facebook.com" target="_blank" rel="noopener" class=""
+                            aria-label="Facebook">
+                            <img src="./assets/img/facebook.svg" alt="Facebook" /> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://google.com" target="_blank" rel="noopener" class="" aria-label="Google">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg" alt="google" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://apple.com" target="_blank" rel="noopener" class=""
+                            aria-label="Apple">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apple/apple-original.svg" alt="Apple" />
+                        </a>
+                    </li>
+                </ul>
+                <form class="auth-form">
+                    <input type="email" class="email-input" name="email" class="email-input" placeholder="Email Address *" />
+                <p class="text-auth">Sign me up to KickClub, featuring exclusive KickOff offers and news</p>
+                <p class="text-auth">By clicking the “Continue” button, you are joining KickClub, will receive emails with the latest news and updates.</p>
+                    <button type="submit" class="continue-button">Continue</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="pro-modal" class="auth" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="pro-title">
+        <div class="auth-modal" role="document">
+            <div class="modal-content">
+                <a href="#" class="modal-close" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+                <div class="logo-lockup">
+                    <img src="./assets/img/LogoKickoff.png" alt="Logo Kickoff" class="logo-modal">
+                    <span class="logo-divider" aria-hidden="true"></span>
+                    <div class="wordmark" aria-label="Kick Essential">
+                        <span class="text-kick">KICK</span>
+                        <span class="text-essential">Essential</span>
+                    </div>
+                </div>
+                <h2 id="pro-title" class="auth-title">CREATE A PROFESSIONAL ACCOUNT</h2>
+                <p class="text-auth">Enjoy members-only access to exclusive products, experiences, offers and more.</p>
+                <ul class="social-auth">
+                    <li> <a href="https://facebook.com" target="_blank" rel="noopener" class=""
+                            aria-label="Facebook">
+                            <img src="./assets/img/facebook.svg" alt="Facebook" /> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://google.com" target="_blank" rel="noopener" class="" aria-label="Google">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg" alt="google" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://apple.com" target="_blank" rel="noopener" class=""
+                            aria-label="Apple">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apple/apple-original.svg" alt="Apple" />
+                        </a>
+                    </li>
+                </ul>
+                <form class="auth-form">
+                    <input type="email" class="email-input" name="email" class="email-input" placeholder="Email Address *" />
+                <p class="text-auth">Independent sports media since 2018.Expert analysis, news, and performance insights across global  sports</p>
+                <p class="text-auth">Trusted by professionals, athletes, and fans. www.KickOff.com</p>
+                    <button type="submit" class="continue-button">Continue</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>
-
