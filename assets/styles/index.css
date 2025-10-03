@@ -74,6 +74,16 @@ header div {
   text-decoration: none; 
 }
 
+.continue-button a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  line-height: 1;
+  text-decoration: none; 
+}
+
 .incognito-button,
 .subscribe-button {
   font-family: "Inter", sans-serif;
