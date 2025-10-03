@@ -150,6 +150,13 @@ main {
   margin-left: 80px;      /* espaço para o menu lateral */
 }
 
+.basquete-noticias img {
+  display: block;
+  width: clamp(320px, 60vw, 900px); /* entre 320px e 900px, responsivo via viewport */
+  max-width: 100%;
+  height: auto; /* mantém proporção */
+  object-fit: cover;
+}
 .header-mid a {
     color: black;
     text-decoration: none;
