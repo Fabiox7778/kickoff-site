@@ -90,41 +90,6 @@ html {
     font-size: 1rem;
   }
   
-  .sign-in-button {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #53aa51;
-    color: white;
-    font-family: "Inter", sans-serif;
-    border: none;
-    font-weight: 600;
-    font-size: 0.9rem;
-    padding: 0.9rem 2rem;
-    border-radius: 100px;
-    cursor: pointer;
-    line-height: 1;
-    text-decoration: none; 
-  }
-  
-  .incognito-button,
-  .subscribe-button {
-    font-family: "Inter", sans-serif;
-    display: inline-flex;
-    background-color: #ffffff;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #2b2d3185;
-    border: 1px solid #d1d5db;
-    padding: 0.9rem 2rem;
-    border-radius: 100px;
-    cursor: pointer;
-    line-height: 1;
-    text-decoration: none;
-  }
-  
   .logo {
     width: 3rem;
     height: 3rem;
@@ -133,26 +98,6 @@ html {
   main {
     font-family: "Inter", sans-serif;
     font-weight: bold;
-  }
-  
-  .sign-in-button:hover {
-    background-color: #469246;
-  }
-  .incognito-button:hover,
-  .subscribe-button:hover {
-    background-color: #f9fafb;
-    border-color: #d1d1c7;
-  }
-  .sign-in-button:focus,
-  .incognito-button:focus,
-  .subscribe-button:focus {
-    outline: 2px solid #ffffff;
-    outline-offset: 2px;
-  }
-  .header-left {
-    display: flex;
-    align-items: center;
-    gap: 10px;
   }
   
   @media (max-width: 480px) {
@@ -164,119 +109,6 @@ html {
       width: 100%;
       justify-content: flex-start;
     }
-  }
-  
-  .banner {
-    position: relative;
-    background: linear-gradient(
-        90deg,
-        rgba(0, 0, 0, 0.55) 0%,
-        rgba(0, 0, 0, 0.55) 55%,
-        rgba(0, 0, 0, 0.85) 80%,
-        rgba(0, 0, 0, 0.95) 100%
-      ),
-      url("../img/main-image.png") center/cover no-repeat;
-    color: #fff;
-    min-height: 320px;
-    display: flex;
-  }
-  
-  .banner-overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 5rem;
-    pointer-events: none;
-  }
-  .logo-banner {
-    max-width: 15rem;
-    height: auto;
-    opacity: 0.9;
-  }
-  
-  .banner-inner {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 48px 24px;
-    display: flex;
-    align-items: center;
-  }
-  .banner-content {
-    max-width: 720px;
-  }
-  .banner-title {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    font-family: "Rowdies", sans-serif;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.05;
-    letter-spacing: 0.2px;
-    margin: 0 0 8px;
-  }
-  .banner-subtitle {
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-    font-size: 24px;
-    color: #e5e7eb;
-    margin: 0 0 24px;
-  }
-  .banner-actions {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
-  .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    padding: 0 16px;
-    border-radius: 999px;
-    font-weight: 600;
-    font-size: 0.95rem;
-    text-decoration: none;
-    transition: all 0.15s ease-in-out;
-  }
-  .btn-signup {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 1.5rem;
-    padding: 1.3rem 1rem;
-    border-radius: 0;
-    font-size: 1.5rem;
-    background-color: #00000000;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #a28f54;
-    color: #a28f54;
-  }
-  .btn-signup:hover {
-    filter: brightness(0.95);
-  }
-  
-  .btn-explore {
-    background-color: #ffc341;
-    color: #111827;
-  }
-  .btn-explore:hover {
-    background-color: #a89e0c;
-  }
-  
-  .btn-create {
-    background-color: #6ac447;
-    color: #fff;
-  }
-  .btn-create:hover {
-    background-color: #449b47;
   }
   
   @media (max-width: 768px) {
