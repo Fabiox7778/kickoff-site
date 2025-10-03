@@ -146,6 +146,7 @@ main {
   justify-content: center; /* centraliza horizontalmente */
   align-items: center;     /* centraliza verticalmente */
   height: 100vh;
+  margin-left: 80px;
 }
 
 .header-mid a {
