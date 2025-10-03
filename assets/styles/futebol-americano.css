@@ -302,7 +302,7 @@ main {
 .banner {
   position: relative;
   background: linear-gradient(
-      90deg,
+      90deg, 
       rgba(0, 0, 0, 0.55) 0%,
       rgba(0, 0, 0, 0.55) 55%,
       rgba(0, 0, 0, 0.85) 80%,
@@ -978,4 +978,121 @@ main {
 .footer-content .help-section,
 .footer-content .help-section-content {
   align-self: flex-start;
+}
+
+
+
+
+/* Footer */
+.layout-footer {
+  background-color: #2b2d31;
+  color: #ffffff;
+  padding: 40px 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.help-section h2,
+.newsletter-section h3,
+.social-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #53aa51;
+}
+
+.help-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.help-links li {
+  margin-bottom: 8px;
+}
+
+.help-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.help-links a:hover {
+  color: #53aa51;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.email-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.button-subscribe {
+  background-color: #53aa51;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.button-subscribe:hover {
+  background-color: #469246;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+  background-color: #53aa51;
+}
+
+.social-links img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #d1d5db;
 }
