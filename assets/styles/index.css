@@ -732,7 +732,7 @@ main {
   color: #fff;
   min-height: 300px;
   display: flex;
-  cursor: not-allowed;
+  cursor: pointer;
 }
 
 .news-header {
