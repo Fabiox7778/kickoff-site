@@ -141,13 +141,15 @@ main {
   gap: 10px;
 }
 
-.futebol-noticias {
+.hockey-noticias {
   display: flex;
   justify-content: center; /* centraliza horizontalmente */
   align-items: center;     /* centraliza verticalmente */
   height: 100vh;
+  margin-left: 80px;      /* espaço para o menu lateral */
 }
 
 .header-mid a {
     color: black;
+    text-decoration: none;
 }
