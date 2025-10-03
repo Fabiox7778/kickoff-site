@@ -6,6 +6,7 @@ body {
 /* Menu lateral */
 .menu-lateral {
   position: fixed;
+  z-index: 900;
   left: 0;
   top: 0;
   height: 100vh;             
@@ -49,7 +50,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 2100; 
 }
 
 header .text-wrapper {
