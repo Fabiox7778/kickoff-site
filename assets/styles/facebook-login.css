@@ -206,9 +206,9 @@ form input[type="password"] {
   margin-top: 10px;
 }
 
-form input[type="submit"] {
+.submit {
   background: #1473ef;
-  width: 95%;
+  width: 85%;
   color: white;
   font-size: 23px;
   font-weight: bold;
@@ -217,6 +217,8 @@ form input[type="submit"] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  border-radius: 10px;
 }
 
 form input[type="submit"]:hover {
@@ -232,6 +234,10 @@ form a {
 
 form a:hover {
   text-decoration: underline;
+}
+
+form input[type="email"] {
+  text-transform: none;
 }
 
 form .new {
