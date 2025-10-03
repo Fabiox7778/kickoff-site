@@ -1,0 +1,83 @@
+.site-info{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f9f9f9;
+    justify-content: center;
+    align-items: center;
+}
+
+.sports-list {
+    list-style-type: square;
+    margin-left: 20px;
+    text-align: left;
+    padding-left: 10px;
+    color: #333;
+    font-size: 18px;
+    justify-content: center;
+    align-self: start;
+}
+
+.team { 
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #f9f9f9;
+}
+
+.team-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: 18px;
+    color: #333;
+    padding: 0;
+}
+
+.team-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 120px;
+    gap: 10px;
+}
+
+
+.team-list img {
+    box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.team-list img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.contatos {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f9f9f9;
+    justify-content: center;
+    align-items: center;
+}
