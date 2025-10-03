@@ -51,7 +51,7 @@ html {
   }
   
   body {
-    background-color: #e5e5e5;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
     margin: 0;
@@ -70,7 +70,7 @@ html {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 2100; /* acima do menu-lateral (900) e abaixo de modais atualizados */
   }
   
   header .text-wrapper {
@@ -111,21 +111,11 @@ html {
     }
   }
   
-  @media (max-width: 768px) {
-    .banner {
-      min-height: 280px;
-      background-position: center right;
-    }
-    .banner-title {
-      font-size: 40px;
-    }
-    .banner-subtitle {
-      font-size: 18px;
-    }
-  }
+
   
   .layout-footer {
     position: relative;
+    z-index: 100;
     background: #3f3f3f;
     color: #ffffff;
   }
@@ -447,7 +437,7 @@ html {
     padding: 16px;
   }
   .auth {
-    z-index: 2000;
+    z-index: 9999; /* modais devem ficar no topo absoluto */
   }
   .auth-modal {
     width: 495px;
