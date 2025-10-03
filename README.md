@@ -9,7 +9,7 @@ Este repositório contém o código-fonte do site, juntamente com os protótipos
 ### 🎨 Identidade Visual
 - **Logotipo**:
 
-![Logotipo ISPN](assets/img/android-chrome-192x192.png)
+![Logotipo ESPN](assets/img/android-chrome-192x192.png)
 - **Paleta de Cores**: Verde e preto
 - **Tipografia**: A fonte utilizada foi a: [Inter](https://fonts.google.com/specimen/Inter)
 
