@@ -480,13 +480,13 @@ main {
 .auth-title {
   font-family: "Koulen", fantasy;
   justify-content: center;
-  font-weight: 10;
+  font-weight: bold;
   flex-direction: row;
   display: inline-flex;
   align-items: center;
   flex-wrap: nowrap;
   white-space: nowrap;
-  font-size: 2.01rem;
+  font-size: 1.6rem;
   margin: 0 2rem 0;
   color: #000000;
 }
@@ -722,6 +722,7 @@ main {
   color: #fff;
   min-height: 300px;
   display: flex;
+  cursor: not-allowed;
 }
 
 .news-header {
@@ -729,8 +730,6 @@ main {
   display: flex;
   justify-content: baseline;
   align-items: center;
-
-
 }
 
 .title-news {
@@ -759,3 +758,58 @@ main {
   box-sizing: border-box;
 }
 
+.help-section {
+  color: white;
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  text-align: left;
+  gap: 6px;
+  padding: 0; 
+  text-shadow: none; 
+  max-width: 800px; 
+}
+
+.help-section-content {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: nowrap;
+  padding: 0; 
+  align-content: baseline;
+  align-items: flex-start;
+  flex-direction: column; 
+  list-style: none;
+  margin-top: 8px;
+}
+
+.help-section-content a {
+  font-size: 23px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap; 
+  text-transform: none;
+}
+
+.help-section h2 {
+  margin: 0; 
+  white-space: nowrap; 
+  line-height: 1.2;
+  font-size: 1.8rem;
+}
+
+.help-section p {
+  margin: 0;
+  line-height: 1.5;
+  white-space: normal; 
+  word-break: normal;
+  overflow-wrap: anywhere; 
+}
+
+
+.footer-content .help-section,
+.footer-content .help-section-content {
+  align-self: flex-start;
+}
