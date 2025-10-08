@@ -1,9 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -12,10 +6,10 @@ body {
 /* Menu lateral */
 .menu-lateral {
   position: fixed;
-  z-index: 900;
+  z-index: 900; /* abaixo do header (1000) e acima do footer (100) */
   left: 0;
   top: 0;
-  height: 100vh;
+  height: 100vh;             
   width: 80px;
   background-color: #ffffff;
   display: flex;
@@ -29,7 +23,7 @@ body {
 
 /* Ícones */
 .menu-lateral a img {
-  width: 40px;
+  width: 40px;               
   transition: 0.3s;
   cursor: pointer;
 }
@@ -42,27 +36,21 @@ body {
 
 /* Ícone ativo (página atual) */
 .menu-lateral a.ativo img {
-  filter: grayscale(100%) brightness(0%);
+  filter: grayscale(100%) brightness(0%); 
 }
 
-.header-mid{
-    color: black;
-    text-decoration: none;
-}
-
-/* Cabeçalho */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 20px; /* padding lateral direto no header */
   background-color: #ffffff;
   border-bottom: 1px solid #e5e7eb;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 2100;
+  z-index: 2100; /* manter o header acima do menu-lateral */
 }
 
 header .text-wrapper {
@@ -82,18 +70,6 @@ header div {
   font-size: 1rem;
 }
 
-.header-left {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.header-mid a {
-  color: black;
-  text-decoration: none;
-}
-
-/* Botões */
 .sign-up-button {
   display: inline-flex;
   justify-content: center;
@@ -108,7 +84,7 @@ header div {
   border-radius: 100px;
   cursor: pointer;
   line-height: 1;
-  text-decoration: none;
+  text-decoration: none; 
 }
 
 .subscribe-button {
@@ -128,6 +104,17 @@ header div {
   text-decoration: none;
 }
 
+.logo {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 10px;
+}
+
+main {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+
 .sign-up-button:hover {
   background-color: #469246;
 }
@@ -143,32 +130,45 @@ header div {
   outline-offset: 2px;
 }
 
-/* Logo */
-.logo {
-  width: 3rem;
-  height: 3rem;
-  margin-right: 10px;
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-/* Conteúdo principal */
-main {
-  font-family: "Inter", sans-serif;
-  font-weight: bold;
+.button-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-/* Página de notícias */
 .basquete-noticias {
   display: flex;
   justify-content: center; /* centraliza horizontalmente */
-  align-items: center;     /* centraliza verticalmente */
+  align-items: center;
   height: 100vh;
-  margin-left: 80px;      /* espaço para o menu lateral */
+  margin-left: 80px;
 }
 
+.header-mid a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Imagem responsiva: mantém proporção e fica com tamanho apropriado em diferentes desktops */
 .basquete-noticias img {
   display: block;
-  width: clamp(320px, 60vw, 900px); /* responsivo */
+  width: clamp(320px, 60vw, 900px); /* entre 320px e 900px, responsivo via viewport */
   max-width: 100%;
-  height: auto;
+  height: auto; /* mantém proporção */
+  object-fit: cover;
+}
+
+/* Imagem responsiva: mantém proporção e fica com tamanho apropriado em diferentes desktops */
+.basquete-times img {
+  display: block;
+  width: clamp(320px, 60vw, 900px); /* entre 320px e 900px, responsivo via viewport */
+  max-width: 100%;
+  height: auto; /* mantém proporção */
   object-fit: cover;
 }
