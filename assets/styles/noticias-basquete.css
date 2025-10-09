@@ -1,9 +1,13 @@
-/* Restored original filename: noticias-basquete.css */body {
+/* Consolidated original styles (merged from basquete.css) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-@import url('./basquete.css');  margin: 0;
-
-/* If basquete.css was the renamed file, optionally move its contents here and delete basquete.css after validation. */  font-family: Arial, sans-serif;
-
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 /* Menu lateral */
@@ -12,7 +16,7 @@
   z-index: 900;
   left: 0;
   top: 0;
-  height: 100vh;             
+  height: 100vh;
   width: 80px;
   background-color: #ffffff;
   display: flex;
@@ -26,7 +30,7 @@
 
 /* Ícones */
 .menu-lateral a img {
-  width: 40px;               
+  width: 40px;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -39,22 +43,27 @@
 
 /* Ícone ativo (página atual) */
 .menu-lateral a.ativo img {
-  filter: grayscale(100%) brightness(0%); 
+  filter: grayscale(100%) brightness(0%);
 }
 
+.header-mid{
+    color: black;
+    text-decoration: none;
+}
+
+/* Cabeçalho */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px; /* padding lateral direto no header */
-  padding-left: 100px; /* reserve space for side menu width (80px) */
+  padding: 10px 20px;
   background-color: #ffffff;
   border-bottom: 1px solid #e5e7eb;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 2100; 
+  z-index: 2100;
 }
 
 header .text-wrapper {
@@ -74,6 +83,18 @@ header div {
   font-size: 1rem;
 }
 
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-mid a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Botões */
 .sign-up-button {
   display: inline-flex;
   justify-content: center;
@@ -88,7 +109,7 @@ header div {
   border-radius: 100px;
   cursor: pointer;
   line-height: 1;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .subscribe-button {
@@ -108,17 +129,6 @@ header div {
   text-decoration: none;
 }
 
-.logo {
-  width: 3rem;
-  height: 3rem;
-  margin-right: 10px;
-}
-
-main {
-  font-family: "Inter", sans-serif;
-  font-weight: bold;
-}
-
 .sign-up-button:hover {
   background-color: #469246;
 }
@@ -134,27 +144,32 @@ main {
   outline-offset: 2px;
 }
 
-.header-left {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+/* Logo */
+.logo {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 10px;
 }
 
-.button-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+/* Conteúdo principal */
+main {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
 }
 
+/* Página de notícias */
 .basquete-noticias {
   display: flex;
-  justify-content: center; /* centraliza horizontalmente */
-  align-items: center;     /* centraliza verticalmente */
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  margin-left: 80px;      /* espaço para o menu lateral */
+  margin-left: 80px;
 }
 
-.header-mid a {
-    color: black;
-    text-decoration: none;
+.basquete-noticias img {
+  display: block;
+  width: clamp(320px, 60vw, 900px);
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
