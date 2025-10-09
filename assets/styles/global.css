@@ -40,6 +40,126 @@ html {
   }
 }
 
+/* Imagens de conteúdo responsivas por padrão */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensure side menu is always above footer */
+.menu-lateral {
+  z-index: 150; /* above footer (100), below sticky header (>=2100) */
+}
+
+/* Animações sutis e acessíveis */
+@keyframes subtle-fade-up {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes subtle-float {
+  from { transform: translateY(0px); }
+  to { transform: translateY(-2px); }
+}
+@keyframes subtle-pop {
+  from { opacity: 0; transform: scale(0.985); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Respeitar usuários que preferem menos animação */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Transições suaves padrão para interações */
+a, button, .btn, .subscribe-button, .sign-in-button, .sign-up-button {
+  transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease, transform 200ms ease;
+}
+
+/* Aparição suave de seções comuns */
+.footer-content, .layout-news, .newsletter-form {
+  animation: subtle-fade-up 420ms ease both;
+}
+
+/* Modais: leve pop ao abrir (via :target) */
+#auth-modal:target .auth-modal,
+#pro-modal:target .auth-modal {
+  animation: subtle-pop 200ms ease-out both;
+}
+
+/* OAuth buttons inside modal */
+.oauth-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.oauth-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #111827;
+  background: #f3f4f6;
+}
+.oauth-btn:hover { background: #e5e7eb; }
+.oauth-btn img { width: 18px; height: 18px; }
+
+/* Menu lateral responsivo (páginas de notícias/times) */
+@media (max-width: 768px) {
+  .menu-lateral {
+    position: fixed;
+    bottom: 0;
+    top: auto;
+    left: 0;
+    right: 0;
+    height: 56px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 16px;
+    border-right: none;
+    border-top: 1px solid #ddd;
+    z-index: 950; /* abaixo do header, acima do conteúdo */
+    background-color: #ffffff;
+  }
+  .menu-lateral a img {
+    width: 28px;
+  }
+  /* Conteúdos com imagens grandes nas páginas de notícias/times */
+  .futebol-noticias,
+  .basquete-noticias,
+  .hockey-noticias,
+  .futebol-americano-noticias,
+  .futebol-americano-times {
+    margin-left: 0;
+    min-height: calc(100vh - 56px - 64px); /* espaço p/ barra inferior + header */
+    height: auto;
+    padding: 16px 12px 72px; /* respiro p/ não cobrir o menu */
+    display: flex;
+    align-items: center;
+  }
+  .futebol-noticias img,
+  .basquete-noticias img,
+  .hockey-noticias img,
+  .futebol-americano-noticias img,
+  .futebol-americano-times img {
+    width: 100%;
+    max-width: 960px;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
   @import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=Koulen&family=Lugrasimo&display=swap");
@@ -573,55 +693,6 @@ html {
     color: white;
     text-align: center;
     padding: 40px 20px;
-  }
-  
-  .layout-news{
-    background: #ffffff;
-    display: flex;
-    justify-content: center;
-    padding: 24px 16px 48px;
-    min-height: 450px;
-  }
-  
-  .news {
-    position: relative;
-    color: #fff;
-    min-height: 300px;
-    display: flex;
-    cursor: not-allowed;
-  }
-  
-  .news-header {
-    padding: 0 2.5rem 2.5rem;
-    display: flex;
-    justify-content: baseline;
-    align-items: center;
-  }
-  
-  .title-news {
-    color:#000000;
-    display: flex;
-    flex-direction: column;
-    justify-content: baseline;
-    align-items: baseline;
-  }
-  
-  .to-news {
-    color: #5DBD5A;
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: lighter;
-    font-family: "Inter", sans-serif;
-  }
-  
-  .news-diviser {
-    display: flex;
-    align-items: center;
-    margin: 10px ;
-    width: 6rem;
-    height: 0.9rem;
-    background-color: #5DBD5A;
-    box-sizing: border-box;
   }
   
   .help-section {

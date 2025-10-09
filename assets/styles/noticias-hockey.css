@@ -43,13 +43,14 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px; /* padding lateral direto no header */
+  padding-left: 100px; /* reserve space for side menu width (80px) */
   background-color: #ffffff;
   border-bottom: 1px solid #e5e7eb;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 2100;
 }
 
 header .text-wrapper {

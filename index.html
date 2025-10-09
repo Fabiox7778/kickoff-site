@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en"></html>
 <head>
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-16x16.png">
@@ -15,7 +15,7 @@
 <body>
     <header>
         <div class="header-left">
-            <img src="/assets/img/LogoKickoff.png" alt="logo" class="logo">
+            <img src="./assets/img/LogoKickoff.png" alt="logo" class="logo">
             <h1 class="text-wrapper">KickOff</h1>
         </div>
         <nav class="button-container">
@@ -33,20 +33,20 @@
             <div class="banner-overlay"> <img src="./assets/img/LogoKickoff.png" alt="logo" class="logo-banner"></div>
             <div class="banner-inner">
                 <div class="banner-content">
-                    <h1 class="banner-title">Built Your Space.</h1>
-                    <p class="banner-subtitle">Create your Sport Blog here!</p>
+                    <h1 class="banner-title">Build your space.</h1>
+                    <p class="banner-subtitle">Create your sports blog here!</p>
                     <nav class="banner-actions">
                         <a href="#auth-modal" class="btn btn-signup">Sign Up</a>
-                        <a href="/pages/noticias-basquete.html" class="btn btn-explore">Explore blogs!</a>
-                        <a href="#pro-modal" class="btn btn-create">Create your own</a>
+                        <a href="./pages/noticias-basquete.html" class="btn btn-explore">Explore blogs!</a>
+                        <a href="#pro-modal" class="btn btn-create">Create yours</a>
                     </nav>
                 </div>
             </div>
         </section>
 
         <div class="layout-green">
-            <h1>Não perca nenhum lance.</h1>
-            <h1>Cobertura completa, minuto a minuto, dos maiores campeonatos!</h1>
+            <h1>Don't miss a moment.</h1>
+            <h1>Complete coverage, minute by minute, of the biggest championships!</h1>
         </div>
         <div class="layout-news">
             <div>
@@ -66,25 +66,25 @@
     <footer class="layout-footer">
         <div class="footer-content">
             <section class="help-section">
-                <h2>Precisa de ajuda?</h2>
+                <h2>Need help?</h2>
             </section>
             <ul class="help-section-content">
                 <li>
-                    <a href="/pages/help-section.html" target="_top">Ajuda</a>
+                    <a href="./pages/help-section.html" target="_top">FAQ</a>
                 </li>
-                <h1> Algumas informações</h1>
+                <h1>Some information</h1>
                 <li>
-                    <a href="/pages/help-section.html" target="_top">Contatos</a>
+                    <a href="./pages/help-section.html" target="_top">Contacts</a>
                 </li>  
                 <li>
-                    <a href="/pages/help-section.html" target="_top">Nosso Time</a>
+                    <a href="./pages/help-section.html" target="_top">Our Team</a>
                 </li>
                 <li>
-                    <a href="/pages/help-section.html" target="_top">Sobre Nós</a>
+                    <a href="./pages/help-section.html" target="_top">About Us</a>
                 </li>
             </ul>
             <h3 class="text-wrapper-13">Kick Off</h3>
-            <p class="make-your-own-blog">MAKE YOUR OWN BLOG</p>
+            <p class="make-your-own-blog">CREATE YOUR OWN BLOG</p>
             <form class="newsletter-form">
                 <p> </p>
                 <div class="rectangle-footer">
@@ -113,9 +113,7 @@
     <div id="auth-modal" class="auth" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="auth-title">
         <div class="auth-modal" role="document">
             <div class="modal-content">
-                <a href="#" class="modal-close" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </a>
+                <a href="#" class="modal-close" aria-label="Close"><span aria-hidden="true">&times;</span></a>
                 <div class="logo-lockup">
                     <img src="./assets/img/LogoKickoff.png" alt="Logo Kickoff" class="logo-modal">
                     <span class="logo-divider" aria-hidden="true"></span>
@@ -124,31 +122,40 @@
                         <span class="text-club">Club</span>
                     </div>
                 </div>
-                <h2 class="auth-title">LOG IN OR SIGN UP</h2>
-                <p class="text-auth">Enjoy members-only access to exclusive products, experiences, offers and more.</p>
+                <h2 class="auth-title">SIGN IN OR REGISTER</h2>
+                <p class="text-auth">Access products, experiences, offers and much more exclusive for members.</p>
                 <ul class="social-auth">
-                    <li> <a href="https://facebook.com" target="_blank" rel="noopener" class=""
-                            aria-label="Facebook">
+                    <li>
+                        <a href="./pages/facebook-login.html" aria-label="Facebook">
                             <img src="./assets/img/facebook.svg" alt="Facebook" /> 
                         </a>
                     </li>
                     <li>
-                        <a href="https://google.com" target="_blank" rel="noopener" class="" aria-label="Google">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg" alt="google" />
+                        <a href="./pages/google-login.html" aria-label="Google">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg" alt="Google" />
                         </a>
                     </li>
                     <li>
-                        <a href="https://apple.com" target="_blank" rel="noopener" class=""
-                            aria-label="Apple">
+                        <a href="#" aria-label="Apple">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apple/apple-original.svg" alt="Apple" />
                         </a>
                     </li>
                 </ul>
                 <form class="auth-form">
+                    <div class="oauth-group">
+                        <a class="oauth-btn facebook" href="./pages/facebook-login.html" aria-label="Continue with Facebook">
+                            <img src="./assets/img/facebook.svg" alt="Facebook" />
+                            <span>Continue with Facebook</span>
+                        </a>
+                        <a class="oauth-btn google" href="./pages/google-login.html" aria-label="Continue with Google">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg" alt="Google" />
+                            <span>Continue with Google</span>
+                        </a>
+                    </div>
                     <input type="email" class="email-input" name="email" class="email-input" placeholder="Email Address *" />
-                <p class="text-auth">Sign me up to KickClub, featuring exclusive KickOff offers and news</p>
-                <p class="text-auth">By clicking the “Continue” button, you are joining KickClub, will receive emails with the latest news and updates.</p>
-                    <button type="submit" class="continue-button"> <a href="/pages/noticias-basquete.html">Continue</a></button>
+                <p class="text-auth">I want to receive news and exclusive offers from KickClub</p>
+                <p class="text-auth">By clicking “Continue”, you are joining KickClub and will receive emails with the latest news and updates.</p>
+                    <button type="submit" class="continue-button"> <a href="./pages/noticias-basquete.html">Continue</a></button>
                 </form>
             </div>
         </div>
@@ -165,33 +172,42 @@
                         <span class="text-essential">Essential</span>
                     </div>
                 </div>
-                <h2 id="pro-title" class="auth-title">CREATE A PROFESSIONAL ACCOUNT</h2>
-                <p class="text-auth">Enjoy members-only access to exclusive products, experiences, offers and more.</p>
+                <h2 id="pro-title" class="auth-title">CREATE PROFESSIONAL ACCOUNT</h2>
+                <p class="text-auth">Access products, experiences, offers and much more exclusive for members.</p>
                
                 </ul>
                 <ul class="social-auth">
-                    <li> <a href="https://facebook.com" target="_blank" rel="noopener" class=""
-                            aria-label="Facebook">
+                    <li>
+                        <a href="./pages/facebook-login.html" aria-label="Facebook">
                             <img src="./assets/img/facebook.svg" alt="Facebook" /> 
                         </a>
                     </li>
                     <li>
-                        <a href="https://google.com" target="_blank" rel="noopener" class="" aria-label="Google">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg" alt="google" />
+                        <a href="./pages/google-login.html" aria-label="Google">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg" alt="Google" />
                         </a>
                     </li>
                     <li>
-                        <a href="https://apple.com" target="_blank" rel="noopener" class=""
-                            aria-label="Apple">
+                        <a href="#" aria-label="Apple">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apple/apple-original.svg" alt="Apple" />
                         </a>
                     </li>
                 </ul>
                 <form class="auth-form">
+                    <div class="oauth-group">
+                        <a class="oauth-btn facebook" href="./pages/facebook-login.html" aria-label="Continue with Facebook">
+                            <img src="./assets/img/facebook.svg" alt="Facebook" />
+                            <span>Continue with Facebook</span>
+                        </a>
+                        <a class="oauth-btn google" href="./pages/google-login.html" aria-label="Continue with Google">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg" alt="Google" />
+                            <span>Continue with Google</span>
+                        </a>
+                    </div>
                     <input type="email" class="email-input" name="email" class="email-input" placeholder="Email Address *" />
-                <p class="text-auth">Independent sports media since 2018. Expert analysis, news, and performance insights across global sports</p>
-                <p class="text-auth">Trusted by professionals, athletes, and fans. www.KickOff.com</p>
-                <button type="submit" class="continue-button"><a href="/pages/noticias-basquete.html">Continue</a></button>
+                <p class="text-auth">Independent sports media since 2018. Analysis, news and performance insights in global sports.</p>
+                <p class="text-auth">Trusted by professionals, athletes and fans. www.KickOff.com</p>
+                <button type="submit" class="continue-button"><a href="./pages/noticias-basquete.html">Continue</a></button>
                 </form>
             </div>
         </div>
