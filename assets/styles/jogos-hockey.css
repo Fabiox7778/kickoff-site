@@ -148,7 +148,7 @@ body {
     margin-left: 10px;      /* espaço para o menu lateral */
   }
   
-  .header-mid a {
+  .header-mid a{
       color: black;
       text-decoration: none;
   }
@@ -159,4 +159,18 @@ body {
     align-items: start;     /* centraliza verticalmente */
     margin-left: 10px;      /* espaço para o menu lateral */
   }
-  
+  .hockey-noticias {
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;     /* centraliza verticalmente */
+  height: 100vh;
+  margin-left: 80px;      /* espaço para o menu lateral */
+}
+
+.hockey-noticias img {
+  display: block;
+  width: clamp(300px, 90vw, 440px); /* responsivo */
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
