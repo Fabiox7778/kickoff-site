@@ -1,3 +1,4 @@
+/* Consolidated original styles (merged from futebol.css) */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,9 +7,10 @@ body {
 /* Menu lateral */
 .menu-lateral {
   position: fixed;
+  z-index: 900; /* abaixo do header (1000) e acima do footer (100) */
   left: 0;
   top: 0;
-  height: 100vh;             
+  height: 100vh;
   width: 80px;
   background-color: #ffffff;
   display: flex;
@@ -22,7 +24,7 @@ body {
 
 /* Ícones */
 .menu-lateral a img {
-  width: 40px;               
+  width: 40px;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -37,8 +39,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px; /* padding lateral direto no header */
-  padding-left: 100px; /* reserve space for side menu width (80px) */
+  padding: 10px 20px;
+  padding-left: 100px;
   background-color: #ffffff;
   border-bottom: 1px solid #e5e7eb;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
@@ -79,7 +81,7 @@ header div {
   border-radius: 100px;
   cursor: pointer;
   line-height: 1;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .subscribe-button {
@@ -137,15 +139,33 @@ main {
   gap: 10px;
 }
 
-.hockey-noticias {
+.futebol-noticias {
   display: flex;
-  justify-content: center; /* centraliza horizontalmente */
-  align-items: center;     /* centraliza verticalmente */
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  margin-left: 80px;      /* espaço para o menu lateral */
+  margin-left: 80px;
 }
 
 .header-mid a {
     color: black;
     text-decoration: none;
+}
+
+/* Imagem responsiva */
+.futebol-noticias img {
+  display: block;
+  width: clamp(320px, 60vw, 900px);
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Imagem responsiva para times */
+.futebol-times img {
+  display: block;
+  width: clamp(320px, 60vw, 900px);
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
