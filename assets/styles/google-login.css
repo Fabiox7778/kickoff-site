@@ -66,6 +66,7 @@ input[type="email"] {
   transition: 0.1s ease;
   background-color: white;
   padding: 0 5px;
+  pointer-events: none; /* evita capturar clique, focando o input */
 }
 
 input[type="email"]:focus ~ .input-label {
@@ -75,12 +76,18 @@ input[type="email"]:focus ~ .input-label {
   background-color: rgb(255, 255, 255);
   z-index: 2;
 }
-input[type="email"]:target ~ .input-label {
+/* Quando o campo tem conteúdo (não está mostrando placeholder), mantém o label acima */
+.input:not(:placeholder-shown) ~ .input-label {
   top: -7px;
-  color: #1864c9;
   font-size: 13px;
-  background-color: rgb(255, 255, 255);
+  color: rgb(122, 122, 122);
+  background-color: #fff;
   z-index: 2;
+}
+/* Suporte a autofill do Chrome */
+.input:-webkit-autofill ~ .input-label {
+  top: -7px;
+  font-size: 13px;
 }
 .input:focus {
   border: 2px solid #1a73e8;
@@ -114,6 +121,11 @@ input[type="email"]:target ~ .input-label {
   padding: 0 25px;
   border-radius: 5px;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1; /* evita desalinhamento vertical do texto */
+  text-decoration: none;
 }
 .create-btn:hover {
   background-color: #e8f2ff6e;

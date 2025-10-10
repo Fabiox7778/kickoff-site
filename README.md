@@ -12,9 +12,20 @@ Este repositório contém o código-fonte do site, juntamente com os protótipos
 ![Logotipo ESPN](assets/img/android-chrome-192x192.png)
 - **Paleta de Cores**: Verde e preto
 - **Tipografia**: A fonte utilizada foi a: [Inter](https://fonts.google.com/specimen/Inter)
+- **Página Inicial**: 
+![Print da Página Inicial](assets/img/homepage-screenshot.png)
 
 ### 💻 Tecnologias Utilizadas
 - **HTML** - Para a estruturação do conteúdo.
 - **CSS** - Para o design e estilização das páginas.
 - **Figma** - Para a criação de wireframes, protótipos e a definição do design visual.
 - **GitHub** - Para controle de versão e colaboração entre os membros da equipe.
+
+### 👥 Equipe de Desenvolvimento
+
+- Gustavo Lisboa
+- Fabio Henrique
+- João Victor
+- Rafael Santos
+- João Stopiglia
+- Pedro Urbano
