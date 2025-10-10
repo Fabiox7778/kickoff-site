@@ -1,0 +1,47 @@
+/* Estilos genéricos para páginas de TIMES (públicas e logadas) */
+/* Objetivo: centralizar o conteúdo principal, padronizar menu lateral e header-mid */
+
+/* Conteúdo principal das páginas de times */
+.futebol-times,
+.basquete-times,
+.hockey-times,
+.futebol-americano-times {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 64px);
+  margin-left: 80px; /* espaço para menu-lateral quando vertical */
+  padding: 16px 12px; /* respiro no desktop também */
+}
+
+/* Imagens dentro do main das páginas de times */
+.futebol-times img,
+.basquete-times img,
+.hockey-times img,
+.futebol-americano-times img {
+  width: auto;
+  max-width: min(100%, 1100px);
+  height: auto;
+  object-fit: contain;
+}
+
+/* Links do header-mid nas páginas de times */
+.header-mid a[aria-current="page"] {
+  font-weight: 800;
+}
+.header-mid a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Ajustes responsivos específicos para times (apoiado pelo global.css) */
+@media (max-width: 768px) {
+  .futebol-times,
+  .basquete-times,
+  .hockey-times,
+  .futebol-americano-times {
+    margin-left: 0;
+    min-height: calc(100vh - 56px - 64px);
+    padding: 16px 12px 72px;
+  }
+}

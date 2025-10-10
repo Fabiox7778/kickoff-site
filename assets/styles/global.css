@@ -135,6 +135,15 @@ a, button, .btn, .subscribe-button, .sign-in-button, .sign-up-button {
   .menu-lateral a img {
     width: 28px;
   }
+    /* Efeito sutil de foco/hover nos ícones do menu-lateral */
+    .menu-lateral a img {
+      transition: transform 160ms ease, box-shadow 160ms ease;
+    }
+    .menu-lateral a:hover img,
+    .menu-lateral a:focus img {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    }
   /* Conteúdos com imagens grandes nas páginas de notícias/times */
   .futebol-noticias,
   .basquete-noticias,
@@ -631,6 +640,26 @@ a, button, .btn, .subscribe-button, .sign-in-button, .sign-up-button {
     border-radius: 18px;
     font-weight: 700;
     cursor: pointer;
+    /* Ajustes para quando .continue-button for <a> */
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 36px; /* centraliza verticalmente o texto */
+  }
+
+  .continue-button:link,
+  .continue-button:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .continue-button:hover {
+    background: #469246; /* mesmo hover do botão subscribe */
+  }
+
+  .continue-button:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
   }
   
   .logo-lockup {
