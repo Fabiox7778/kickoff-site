@@ -41,11 +41,6 @@ body {
   opacity: 0.7;
 }
 
-/* Ícone ativo (página atual) */
-.menu-lateral a.ativo img {
-  filter: grayscale(100%) brightness(0%);
-}
-
 .header-mid{
     color: black;
     text-decoration: none;
@@ -57,6 +52,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  padding-left: 100px; /* reserva espaço menu lateral */
   background-color: #ffffff;
   border-bottom: 1px solid #e5e7eb;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);

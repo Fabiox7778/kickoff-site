@@ -33,11 +33,6 @@ body {
   opacity: 0.7;
 }
 
-/* Ícone ativo (página atual) */
-.menu-lateral a.ativo img {
-  filter: grayscale(100%) brightness(0%); 
-}
-
 header {
   display: flex;
   justify-content: space-between;
